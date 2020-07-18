@@ -1,0 +1,12 @@
+.buttons {
+    display: flex;
+  }
+
+.buttons > div {
+    border: 1px solid #999999;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px 20px 0;
+    user-select: none;
+  }

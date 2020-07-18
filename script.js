@@ -1,3 +1,6 @@
+const startButton = document.getElementById("start");
+
+startButton.onclick = () => {
 let canvas = document.getElementById('canvas');
 let ctx = canvas.getContext('2d');
 let width = canvas.width;
@@ -81,7 +84,7 @@ class Snake {
 }
 
     Snake.prototype.draw = function () {
-    for (let i = 0; i < this.segments.length; i++) {
+    for (let i = 0; i<this.segments.length; i++) {
     this.segments[i].drawSquare('Blue');
 }
 }
@@ -186,6 +189,4 @@ function directKey(event) {
         snake.setDirection(newDirection);
     }
 }
-
-
-
+}
